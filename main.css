@@ -17,7 +17,7 @@ body {
 }
 
 .card {
-  margin: 100px auto 0;
+  margin: 30px auto 0;
   width: 400px;
   height: 600px;
   perspective: 1000px;
@@ -122,4 +122,42 @@ body {
   color: var(--dark);
   font-size: 18px;
   line-height: 1.4;
+}
+
+.hebrewMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.hebrewFirst>div,
+.hebrewLast>div {
+  width: 200px;
+  height: 280px;
+  background-color: red;
+  border-radius: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+  .hebrewFirst,
+  .hebrewLast {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .hebrewFirst>div,
+  .hebrewLast>div {
+    width: 100px;
+    height: 180px;
+  }
+
+  .card {
+    height: 400px;
+  }
 }
